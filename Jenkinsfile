@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     echo 'Building project...'
-                    sh 'g++ -o output main.cpp'
+                    sh 'g+ -o output main.cpp'
                 }
             }
         }
