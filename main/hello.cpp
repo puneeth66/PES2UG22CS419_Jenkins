@@ -3,8 +3,8 @@
 using namespace std;
 
 int main(void) {
-  cout << "Jai DBOSS\n";
-  cout << "Jalgara kaili\n";
+  cout << "Puneeth BU\n";
+  cout << "PES2UG22CS419\n";
   cout << "I have successfully built and run this  \n";
   return 0;
 }
