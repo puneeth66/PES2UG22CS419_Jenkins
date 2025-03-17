@@ -1,14 +1,16 @@
 pipeline {
     agent any
+
     stages {
         stage('Build') {
             steps {
                 script {
                     echo 'Building project...'
-                    sh 'g++ main.cpp -o YOUR_SRN-1'
+                    sh 'g++ -o output main.cpp'
                 }
             }
         }
+
         stage('Test') {
             steps {
                 script {
@@ -17,6 +19,7 @@ pipeline {
                 }
             }
         }
+
         stage('Deploy') {
             steps {
                 script {
@@ -26,6 +29,7 @@ pipeline {
             }
         }
     }
+
     post {
         failure {
             echo 'Pipeline failed!'
